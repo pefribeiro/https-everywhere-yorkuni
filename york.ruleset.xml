@@ -12,4 +12,9 @@
 
   <rule from="^http://([^/:@]*)\.yorkspace\.net" to="https://$1.yorkspace.net/"/>
 </ruleset>
+
+<ruleset name="YUSU">
+	<target host="*.yusu.org" />
+	<rule from="^http://([^/:@]*)\.yusu\.org" to="https://$1.yusu.org/"/>
+</ruleset>
 </rulesetlibrary>
