@@ -1,9 +1,10 @@
 <rulesetlibrary>
 <ruleset name="YorkUni">
+  <target host="york.ac.uk" />		
   <target host="*.york.ac.uk" />
-  <exclusion pattern="^http://cs\.york\.ac\.uk/yds/"/>
-  <exclusion pattern="^http://www\.cs\.york\.ac\.uk/yds/"/>
 
+  <rule from="^https://cs\.york\.ac\.uk/" to="https://www.cs.york.ac.uk/"/>
+  <rule from="^http://cs\.york\.ac\.uk/" to="https://www.cs.york.ac.uk/"/>
   <rule from="^http://([^/:@]*)\.york\.ac\.uk/" to="https://$1.york.ac.uk/"/>
 </ruleset>
 
