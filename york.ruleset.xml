@@ -11,11 +11,13 @@
 <ruleset name="YorkSpace">
   <target host="*.yorkspace.net" />
 
-  <rule from="^http://([^/:@]*)\.yorkspace\.net" to="https://$1.yorkspace.net/"/>
+  <rule from="^http://([^/:@]*)\.yorkspace\.net/" to="https://$1.yorkspace.net/"/>
 </ruleset>
 
 <ruleset name="YUSU">
-	<target host="*.yusu.org" />
-	<rule from="^http://([^/:@]*)\.yusu\.org" to="https://$1.yusu.org/"/>
+  <target host="www.yusu.org" />
+  <target host="*.yusu.org" />
+  <rule from="^http://yusu\.org/" to="https://yusu.org/"/>
+  <rule from="^http://www\.yusu\.org/" to="https://www.yusu.org/"/>
 </ruleset>
 </rulesetlibrary>
